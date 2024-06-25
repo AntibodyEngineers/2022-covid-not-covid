@@ -14,5 +14,14 @@ For our case we estimated that we would need both GPU- (graphics processing unit
 ### Software
 The python programming language and relevant python libraries were installed. The python libraries included machine learning packages such as tensorflow for computing and pandas for data preparation. In addition to the libraries, Jupyter notebook software (Jupyter lab) was installed to give team members a web-based interface to develop and share code. 
 
-[Ablang](/github.com/oxpig/AbLang) used for maching learning 
+[Ablang](https://github.com/oxpig/AbLang) used for maching learning. It is an antibody specific language model trained on either the heavy or light chain antibody sequences from the [Observed Antibody Space](https://opig.stats.ox.ac.uk/webapps/oas/) database, or OAS. 
+>OAS is a project to collect and annotate immune repertoires for use in large-scale analysis. It currently contains over one billion sequences, from over 80 different studies. These repertoires cover diverse immune states, organisms (primarily human and mouse), and individuals.
+
 ### Data Sets
+Data from a companion database, [CoV-AbDab](https://opig.stats.ox.ac.uk/webapps/covabdab/) was used for training and testing. At the time (Aug 2022) the entire database contained about 10,000 entries. 
+
+## What was Learned
+The team included college instructors, high school teachers, students, and computational scientists. Some members had computing experience and were able to write scripts to clean data and work with the different python libraries. The project lead, worked as the technical lead and set up the computing environments. Only one of the team members had sufficient programming experience to build and test the ML prediction model. Other members were new to this kind of computing and using Jupyter Notebooks. Indeed, an unexpected outcome was that the Jupyter notebook instruction took a significant amount of time. 
+
+With respect to ML prediction, a dataset of 4000 sequences containing the variable regions from neutralizing and non-neutralizing anti-SARS-CoV-2 spike protein were preprocessed into 768 attributes using the AbLang library. A first step in ML is to convert data into numerical n-dimensional vectors so that each datum is unique. Next the data are split into training data (3200 sequences) and test data (800 sequences). The training data are processed in the artificial neural network to build a model that distinguishes neutralizing sequences from non-neutralizing. The test data are then used to measure the model’s predictive quality. With 3200 training sequences our model had a 71% accuracy. On a 16 core CPU the model could be trained in five minutes. We were unable to test the GPU instance due to installation errors. 
+  
