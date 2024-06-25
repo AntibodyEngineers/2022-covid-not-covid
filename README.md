@@ -14,6 +14,5 @@ For our case we estimated that we would need both GPU- (graphics processing unit
 ### Software
 The python programming language and relevant python libraries were installed. The python libraries included machine learning packages such as tensorflow for computing and pandas for data preparation. In addition to the libraries, Jupyter notebook software (Jupyter lab) was installed to give team members a web-based interface to develop and share code. 
 
-https://github.com/alchemab/antiberta
-
+[Ablang](/oxpig/AbLangwas) used for maching learning 
 ### Data Sets
