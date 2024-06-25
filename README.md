@@ -9,8 +9,11 @@ We use the NSF supported Jetstream (https://jetstream-cloud.org/) computing reso
 
 Jetstream provides the overall infrastructure. Users of the platform make computing resources available by creating virtual machines (VMs). A VM is a software instantiation of a computer that includes a number of GPU or CPU processors and a virtual disk of a specified size. Any number of VMs can be made. The size and type of the computer, how long it runs, and computing loads determines the number of SUs that are used. Jetstream provides web-based interfaces that allow one to configure VMs, set them to running, or shelve them. Shelved VMs are a way to preserve work without using SUs. 
 
-For our case we estimated that we would need both GPU- (graphics processing unit) and CPU- (central processing unit) based computers. GPUs are used in high-performance computing applications. In the case of ML, computing models need to be trained on very large datasets and GPUs are often used for purpose. We estimated that our mix of GPUs and CPUs would require 120,000 SUs for a week's worth of operation (full uptime). 120,000 SUs were granted for one year. Over the course of the hackathon, and period afterward we used 73,000 of our 120,000 SU allocation.  
+For our case we estimated that we would need both GPU- (graphics processing unit) and CPU- (central processing unit) based computers. GPUs are used in high-performance computing applications. In the case of ML, computing models need to be trained on very large datasets and GPUs are often used for purpose. We estimated that our mix of GPUs and CPUs would require 120,000 SUs for a week's worth of operation (full uptime). 120,000 SUs were granted for one year. For the hackathon we set up one CPU and one GPU VM. Accounts were added for 10 team members. Over the course of the hackathon, and period afterward we used 73,000 of our 120,000 SU allocation.  
+
 ### Software
+The python programming language and relevant python libraries were installed. The python libraries included machine learning packages such as tensorflow for computing and pandas for data preparation. In addition to the libraries, Jupyter notebook software (Jupyter lab) was installed to give team members a web-based interface to develop and share code. 
+
 https://github.com/alchemab/antiberta
 
 ### Data Sets
