@@ -4,7 +4,7 @@ The overall goal of the work is to demystify machine learning (ML). ML is a larg
 
 ## Resources
 ### Jetstream
-We use the NSF supported Jetstream (https://jetstream-cloud.org/) computing resources. From the website: 
+We used the NSF supported Jetstream (https://jetstream-cloud.org/) computing resources. From the website: 
 > Jetstream2 is a transformative update to the NSF’s science and engineering cloud infrastructure and provides 8 petaFLOPS of supercomputing power to simplify data analysis, boost discovery, and increase availability of AI resources. It is an NSF-funded, user-friendly cloud environment designed to allow “always on” research infrastructure and to give researchers access to interactive computing and data analysis resources on demand, whenever and wherever they want to analyze their data.
 
 Jetstream provides the overall infrastructure. Users of the platform make computing resources available by creating virtual machines (VMs). A VM is a software instantiation of a computer that includes a number of GPU or CPU processors and a virtual disk of a specified size. Any number of VMs can be made. The size and type of the computer, how long it runs, and computing loads determines the number of SUs that are used. Jetstream provides web-based interfaces that allow one to configure VMs, set them to running, or shelve them. Shelved VMs are a way to preserve work without using SUs. 
