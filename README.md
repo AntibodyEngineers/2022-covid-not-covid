@@ -25,3 +25,11 @@ The team included college instructors, high school teachers, students, and compu
 
 With respect to ML prediction, a dataset of 4000 sequences containing the variable regions from neutralizing and non-neutralizing anti-SARS-CoV-2 spike protein were preprocessed into 768 attributes using the AbLang library. A first step in ML is to convert data into numerical n-dimensional vectors so that each datum is unique. Next the data are split into training data (3200 sequences) and test data (800 sequences). The training data are processed in the artificial neural network to build a model that distinguishes neutralizing sequences from non-neutralizing. The test data are then used to measure the model’s predictive quality. With 3200 training sequences our model had a 71% accuracy. On a 16 core CPU the model could be trained in five minutes. We were unable to test the GPU instance due to installation errors. 
   
+Hackathons are funded by the National Science Foundation DUE 2055036
+
+Work utalized the Jetstream2 resource:  
+David Y. Hancock, Jeremy Fischer, John Michael Lowe, Winona Snapp-Childs, Marlon Pierce, Suresh Marru, J. Eric Coulter, Matthew Vaughn, Brian Beck, Nirav Merchant, Edwin Skidmore, and Gwen Jacobs. 2021. “Jetstream2: Accelerating cloud computing via Jetstream.” In Practice and Experience in Advanced Research Computing (PEARC ’21). Association for Computing Machinery, New York, NY, USA, Article 11, 1–8. DOI: https://doi.org/10.1145/3437359.3465565
+
+Timothy J. Boerner, Stephen Deems, Thomas R. Furlani, Shelley L. Knuth, and John Towns. 2023. ACCESS: Advancing Innovation: NSF’s Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support. “In Practice and Experience in Advanced Research Computing (PEARC ’23)”, July 23–27, 2023, Portland, OR, USA. ACM, New York, NY, USA, 4 pages. https://doi.org/10.1145/3569951.3597559
+
+This work used Jetstream2 at Indiana University through allocation BIO220105 from the Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) program, which is supported by National Science Foundation grants #2138259, #2138286, #2138307, #2137603, and #2138296
